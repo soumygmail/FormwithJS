@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       h1{
+        text-align: center;
+       
+       }
+
+        .texts{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 30px;
+            margin: 0 auto;
+            padding: 120px;
+            box-sizing: border-box;
+            font-size: 40px;
+            font-weight: bold;
+            background-image: linear-gradient(to right,yellowgreen,pink,red);
+            
+        }
+        button{
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+        button:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        input{
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Login Page</h1>
+    <hr>
+    <div class="texts">
+      Username:<br>
+      <input type="text" id="username">
+      <br><br>
+      Password:<br>
+      <input type="password" name="text" id="password">
+      <br><br>
+
+      <button onclick="login()">
+        Submit
+      </button>
+    </div>
+    <script type="text/javascript">
+        function login()
+        {
+            var uname=document.getElementById('username').value;
+            var pass=document.getElementById('password').value;
+
+            if(uname=="ruhi" && pass=="1234")
+            {
+                location.assign("http://127.0.0.1:5500/indexx.html")
+            }
+            else{
+                window.alert("Login failed")
+            }
+        }
+    </script>>
+
+    </script>
+</body>
+</html>
